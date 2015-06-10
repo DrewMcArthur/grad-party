@@ -1,13 +1,15 @@
 {
-	"name": "grad-party",
-	"version": "0.0.1", 
-	"private": false, 
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/DrewMcArthur/grad-party.git"
-	},
-	"dependencies": {
-		"fs": "latest",
-		"serve-static": "latest"
-	}
+  "name": "grad-party",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DrewMcArthur/grad-party.git"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "fs": "latest",
+    "jade": "latest",
+    "serve-static": "latest"
+  }
 }
