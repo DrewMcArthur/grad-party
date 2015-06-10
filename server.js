@@ -4,7 +4,7 @@ var jade = require('jade');
 app.set('view engine', 'jade');
 app.locals.port = 80;
 
-app.use(express.static(__dirname + '/pub'));
+app.use('/pub', express.static(__dirname + "/pub"));
 
 app.get('/', function(req,res){
 	res.render('index', { title: 'Hey', message: 'Hello there!'});

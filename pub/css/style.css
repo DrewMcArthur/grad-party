@@ -1,0 +1,13 @@
+.details {
+	max-width: 900px;
+	margin:auto;
+	text-align: center;
+}
+.response div {
+	display:inline-block;
+	margin:10px;
+}
+.response{
+	margin:auto;
+	text-align:center;
+}
