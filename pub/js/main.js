@@ -1,27 +1,25 @@
 $(document).ready(function(){
 	$('.more-details').hide();
+
+//show more details on click
 	$('.more-info').on('click',function(){
 		$('div.details').hide();
 		$('div.more-details').show();
-		console.log('clicked more info');
-		$(document).on('click',function(){
+		$('div.more-details img.mark').on('click',function(){
 			$('div.more-details').hide();
 			$('div.details').show();
-			console.log('clicked hide more info');
 		});
 	});
+
+//set map background on address hover
+	var timer;
 	$('a.nats-house').on('mouseenter',function(){
-		$('div.background').css('background-image','url("/pub/images/map106william.png")');
-/*
-		$('div.container').removeClass('background');
-		$('div.container').addClass('background-map-nat');
-*/
-	});
-	$('a.nats-house').on('mouseleave',function(){
-		$('div.background').css('background-image','url("/pub/images/tossing-hats.jpg")');
-/*
-		$('div.container').removeClass('background-map-nat');
-		$('div.container').addClass('background');
-*/
+		timer = setTimeout(function(){
+			$('div.background').css('background-image','url("/pub/images/map106william.png")');
+		},300);
+		$('a.nats-house').on('mouseleave',function(){
+			clearTimeout(timer);
+			$('div.background').css('background-image','url("/pub/images/tossing-hats.jpg")');
+		});
 	});
 });

@@ -1,3 +1,6 @@
+a {
+	color: black;
+}
 body{
 	background-color:darkgreen;
 }
@@ -22,11 +25,11 @@ body{
 	position:absolute;
 	top:0;
 	left:0;
-	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 40%, rgba(255,255,255,.75) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(255,255,255,.75)), color-stop(60%,rgba(255,255,255,.75), color-stop(100%,rgba(255,255,255,0)))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* W3C */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.8) 35%, rgba(255,255,255,.8) 65%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(35%,rgba(255,255,255,.8)), color-stop(65%,rgba(255,255,255,.8), color-stop(100%,rgba(255,255,255,0)))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.8) 65%,rgba(255,255,255,0) 100%); /* W3C */
 }
 .details {
 	max-width: 900px;
@@ -41,7 +44,7 @@ body{
 	margin:auto;
 	text-align:center;
 }
-.response div img {
+img.mark {
 	height:50px;
 	width: 50px;
 	padding: 20px;
@@ -51,7 +54,7 @@ body{
 	height:60px;
 	padding:15px;
 }
-.response div img:hover {
+img.mark:hover {
 	height:70px;
 	width: 70px;
 	padding: 10px;
@@ -63,13 +66,34 @@ body{
 }
 .details .more-info {
 	cursor:pointer;
+	text-decoration:underline;
 }
 .more-details {
 	display:hidden;
+	max-width:600px;
+	margin:50px auto 0 auto;
+	text-align:center;
+}
+.more-details img.mark {
+	display:block;
+	margin:auto;
 }
 @media only screen and (max-width:974px){
 	.background{
 		background-size:100%;
 		background-position:center top;
+	}
+}
+@media only screen and (max-device-width:734px){
+	.background{
+		background-size:100%;
+		background-position:center top;
+	}
+	.more-details,.details {
+		font-size:2em;
+		line-height:1em;
+	}	
+	img.mark {
+		150px;
 	}
 }
