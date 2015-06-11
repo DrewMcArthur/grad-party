@@ -2,19 +2,7 @@ body{
 	background-color:darkgreen;
 }
 .background{
-	background:url("/pub/images/tossing-hats.jpg");
-	background-repeat:no-repeat;
-	background-position-x: 50%;
-	background-position-y: 25%;
-	background-size:83%;
-	height:100%;
-	width:100%;
-	position:absolute;
-	top:0;
-	left:0;
-}
-.background-map-nat {
-	background:url("/pub/images/map106william.png");
+	background-image:url("/pub/images/tossing-hats.jpg");
 	background-repeat:no-repeat;
 	background-position-x: 50%;
 	background-position-y: 25%;

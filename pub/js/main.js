@@ -11,11 +11,17 @@ $(document).ready(function(){
 		});
 	});
 	$('a.nats-house').on('mouseenter',function(){
+		$('div.background').css('background-image','url("/pub/images/map106william.png")');
+/*
 		$('div.container').removeClass('background');
 		$('div.container').addClass('background-map-nat');
+*/
 	});
 	$('a.nats-house').on('mouseleave',function(){
+		$('div.background').css('background-image','url("/pub/images/tossing-hats.jpg")');
+/*
 		$('div.container').removeClass('background-map-nat');
 		$('div.container').addClass('background');
+*/
 	});
 });
