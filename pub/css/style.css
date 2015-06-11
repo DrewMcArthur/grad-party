@@ -1,3 +1,45 @@
+body{
+	background-color:darkgreen;
+}
+.background{
+	background:url("/pub/images/tossing-hats.jpg");
+	background-repeat:no-repeat;
+	background-position-x: 50%;
+	background-position-y: 25%;
+	background-size:83%;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.background-map-nat {
+	background:url("/pub/images/map106william.png");
+	background-repeat:no-repeat;
+	background-position-x: 50%;
+	background-position-y: 25%;
+	background-size:83%;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.subbody{
+/*
+	background-color:rgba(255,255,255,0.5);
+*/
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 40%, rgba(255,255,255,.75) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(255,255,255,.75)), color-stop(60%,rgba(255,255,255,.75), color-stop(100%,rgba(255,255,255,0)))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.75) 40%,rgba(255,255,255,.75) 60%,rgba(255,255,255,0) 100%); /* W3C */
+}
 .details {
 	max-width: 900px;
 	margin:auto;
@@ -10,4 +52,36 @@
 .response{
 	margin:auto;
 	text-align:center;
+}
+.response div img {
+	height:50px;
+	width: 50px;
+	padding: 20px;
+	cursor:pointer;
+}
+.response div.yes img {
+	height:60px;
+	padding:15px;
+}
+.response div img:hover {
+	height:70px;
+	width: 70px;
+	padding: 10px;
+}
+.response div.yes img:hover {
+	height:80px;
+	width:80px;
+	padding:0px;
+}
+.details .more-info {
+	cursor:pointer;
+}
+.more-details {
+	display:hidden;
+}
+@media only screen and (max-width:974px){
+	.background{
+		background-size:100%;
+		background-position:center top;
+	}
 }
