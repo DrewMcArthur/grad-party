@@ -1,8 +1,11 @@
+* {
+	font-family:'ubuntu';
+}
 a {
 	color: black;
 }
 body{
-	background-color:darkgreen;
+	background-color:#1B4F1B;
 }
 .background{
 	background-image:url("/pub/images/tossing-hats.jpg");
