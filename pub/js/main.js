@@ -1,13 +1,16 @@
 $(document).ready(function(){
 	$('.more-details').hide();
+	$('.number').hide();
 
 //show more details on click
 	$('.more-info').on('click',function(){
 		$('div.details').hide();
+		$('div.response').hide();
 		$('div.more-details').show();
 		$('div.more-details img.mark').on('click',function(){
 			$('div.more-details').hide();
 			$('div.details').show();
+			$('div.response').show();
 		});
 	});
 
@@ -21,5 +24,8 @@ $(document).ready(function(){
 			clearTimeout(timer);
 			$('div.background').css('background-image','url("/pub/images/tossing-hats.jpg")');
 		});
+	});
+	$('.textdrew').on('click',function(){
+		$('.number').toggle();
 	});
 });
